@@ -1,0 +1,94 @@
+@font-face {
+    font-family: RobotoGras;
+    src: url("../fonts/Roboto_Gros.ttf");
+}
+
+@font-face {
+    font-family: Roboto_Leger;
+    src: url("../fonts/Roboto_Leger.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    color:white;
+}
+
+#notification {
+    width: 10%;
+    height: 80vh;
+    min-width: 255px;
+    margin: 10px;
+    max-width: 60.25px;
+    position: absolute;
+    left: 1.5%;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-end;
+}
+
+#notification > div{
+    background-color: rgba(17, 17, 17, 0.8);
+    width: 100%;
+    margin-bottom: 0.3vh;
+    border-radius: 0.2rem;
+}
+
+#notification > div > div {
+    padding: 10px;
+}
+
+#notification > div > .time {
+    padding: 0;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(0, 110, 251);
+}
+
+#notification > div > div > p {
+    margin: 10px;
+    margin-top: 1px;
+    font-size: 15px;
+    font-family: RobotoGras;
+}
+
+.slide {
+    max-width: 100%;
+}
+
+.kill {
+    animation: kill 0.2s ease-out forwards;
+}
+
+.spawn {
+    animation: spawn 0.2s ease-out forwards;
+}
+
+@keyframes kill {
+    from {
+        margin-left: 0%
+    } to {
+        margin-left: -110%
+    }
+}
+
+@keyframes spawn {
+    from {
+        margin-left: -110%
+    } to {
+        margin-left: 0%
+    }
+}
+
+@keyframes notification{
+    from {
+        width: 100%
+    } to {
+        width: 0%
+    }
+}
