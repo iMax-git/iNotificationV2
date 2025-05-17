@@ -1,4 +1,9 @@
-# START
+# iNotificationV2
+
+Crée par iMax pour la plateforme ADN's.
+
+Disponible en open source.
+
 
 Start this resource after or before your es_extended
 
@@ -137,7 +142,7 @@ ESX.ShowNotification(<Quelque chose>)
             z = z
         })
     else
-        TriggerClientEvent("iNotification:send", {
+        TriggerClientEvent("iNotification:send",source, {
         type = 1, title = "SYSTEM", text = "Invalid coordinates !",
         showTime = 10
         })

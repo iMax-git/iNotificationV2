@@ -17,21 +17,21 @@ end
 
 -- Premier type de notification (simple):
 
--- TriggerClientEvent("iNotification:send", {
+-- TriggerClientEvent("iNotification:send", source,{
 --     type = 1, title = "Hello", text = "It's me mario!", 
 --     showTime = 5, --[[ in seconds ]] color = "255, 0, 0"
 -- })
 
 -- Deuxième type de notification (text pré configurer dans le javascript):
 
--- TriggerClientEvent("iNotification:send", {
+-- TriggerClientEvent("iNotification:send", source,{
 --     type = 2, title = "Deuxième", text = "It's me mario 2!", 
 --     showTime = 5, --[[ in seconds ]] color = "255, 0, 0"
 -- })
 
 -- Troisième type de notification (text a configurer via une table avec 2 choix):
 
--- TriggerClientEvent("iNotification:send", {
+-- TriggerClientEvent("iNotification:send", source,{
 --     type = 3, title = "Troisième", text = "It's me mario 3!", 
 --     showTime = 5, --[[ in seconds ]] color = "100, 150, 0",
 --     multipleChoice = {"Accepter", "Refuser"}
